@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" ng-app='fwrk.home' >
+    <head>
+        <meta charset="utf-8">
+        <title>How we work</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  crossorigin="anonymous">
+        <!-- Optional theme -->      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <link rel="stylesheet" href="/home/css/main.css">
+        <link rel="stylesheet" href="/home/css/header.css">
+        <link rel="stylesheet" href="/home/css/footer.css">
+        <link rel="stylesheet" href="/home/css/howwework.css">
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Main Content -->
+        <div ng-include='"/home/templates/header.html"'></div>
+        <div ng-include='"/home/templates/howwework.html"'></div>
+        <div ng-include='"/home/templates/footer.html"'></div>
+        <!-- Angular Material Dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <!-- UI Router -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+        <!-- Angular Material -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+         <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+        <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+           <link rel="stylesheet" href="animate.min.css">
+        <!-- Custom JS -->
+        <script src='/admin/js/lib/markdown.js'></script>
+        <script src='/home/js/app.js'></script>
+        <script src='/home/js/controllers/post.js'></script>
+        <script src='/common/modules/posts.js'></script> 
+        <script src='/common/modules/pages.js'></script>  
+        <script src='/common/modules/portfolios.js'></script>  
+        <script src='/common/modules/users.js'></script>
+        <script src='/common/modules/clients.js'></script>
+        <script src='/common/modules/testimonials.js'></script>
+		<script src='/common/modules/contacts.js'></script>
+         <script src='/common/modules/innovate.js'></script>
+         <script src='/common/modules/careers.js'></script>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>  
+        <script type="text/javascript">
+//             $(document).ready(function() {
+// //       / setTimeout(tinymce.init({ selector:'#description' }), 3000); 
+//                 var slideIndex = 0;
+//                 showSlides();
+//                 function showSlides() {
+//                     var i;
+//                     var slides = document.getElementsByClassName("mySlides");
+//                     var dots = document.getElementsByClassName("dot");
+//                     for (i = 0; i < slides.length; i++) {
+//                         slides[i].style.display = "none";
+//                     }
+//                     slideIndex++;
+//                     if (slideIndex > slides.length) {
+//                         slideIndex = 1
+//                     }
+//                     for (i = 0; i < dots.length; i++) {
+//                         dots[i].className = dots[i].className.replace(" active", "");
+//                     }
+//                     slides[slideIndex - 1].style.display = "block";
+//                     dots[slideIndex - 1].className += " active";
+//                     setTimeout(showSlides, 3000);
+
+//                 }
+
+//             });
+        </script>
+		<!-- write script to toggle class on scroll -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
+</script>
+
+<script type="text/javascript">
+        $.fn.extend({
+    animateCss: function (animationName) {
+        console.log('workingg');
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+        return this;
+    }
+});
+    
+    $(document).ready(function(){
+         $('#ex1').hover(function (){
+            // console.log('wooble!!!!!');
+    $('#ex1').animateCss('flash');
+},function(){
+     console.log('wooble!!!!!');
+    $('#ex1').animateCss('flash');
+}); 
+});
+$(document).ready(function(){
+         $('#ex2').hover(function (){
+            // console.log('wooble!!!!!');
+    $('#ex2').animateCss('flash');
+},function(){
+     console.log('wooble!!!!!');
+    $('#ex2').animateCss('flash');
+}); 
+});
+$(document).ready(function(){
+         $('#ex3').hover(function (){
+            // console.log('wooble!!!!!');
+    $('#ex3').animateCss('flash');
+},function(){
+     console.log('wooble!!!!');
+    $('#ex3').animateCss('flash');
+}); 
+});
+$(document).ready(function(){
+         $('#ex4').hover(function (){
+            // console.log('wooble!!!!');
+    $('#ex4').animateCss('flash');
+      console.log('wobble!!!!!');
+},function(){
+     console.log('wobble!!!!!');
+    $('#ex4').animateCss('flash');
+}); 
+});
+$(document).ready(function(){
+         $('#ex5').hover(function (){
+            // console.log('wooble!!!!');
+    $('#ex5').animateCss('flash');
+      console.log('wobble!!!!!');
+},function(){
+     console.log('wobble!!!!!');
+    $('#ex5').animateCss('flash');
+}); 
+});
+$(document).ready(function(){
+         $('#ex6').hover(function (){
+            // console.log('wooble!!!!');
+    $('#ex6').animateCss('flash');
+      console.log('wobble!!!!!');
+},function(){
+     console.log('wobble!!!!!');
+    $('#ex6').animateCss('flash');
+}); 
+});
+
+$(document).ready(function(){
+         $('#ex7').hover(function (){
+            // console.log('wooble!!!!');
+    $('#ex7').animateCss('slideInDown');
+      console.log('wobble!!!!!');
+},function(){
+     console.log('wobble!!!!!');
+    $('#ex7').animateCss('slideInDown');
+}); 
+});
+
+$(document).ready(function(){
+         $('#ex8').hover(function (){
+            // console.log('wooble!!!!');
+    $('#ex8').animateCss('flipInX');
+      console.log('wobble!!!!!');
+},function(){
+     console.log('wobble!!!!!');
+    $('#ex8').animateCss('flipInX');
+}); 
+});
+
+
+
+</script>
+
+</body>
+</html>

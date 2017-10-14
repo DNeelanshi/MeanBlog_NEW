@@ -1,0 +1,57 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Testimonial
+            <small>Edit Testimonial</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/admin/dashboard#/TestimonialList"><i class="fa fa-dashboard"></i> User</a></li>
+            <li class="active">Edit User</li>
+        </ol>
+    </section>
+    <section class="content">
+
+
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Edit Testimonial</h3>
+                    </div>
+                    <div class="form-group">
+                        <div class="alert alert-success" ng-show="message">
+                            <strong ng-bind="message" ></strong> 
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    <form role="form" ng-submit="edittestID()">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1"> Name</label>
+                                <input type="text" class="form-control" name='name' ng-model='testimonial.name' required="" placeholder=" Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Image</label>
+                                <input type="text" class="form-control"  name='image' ng-model='testimonial.image' required="" placeholder="Image">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Description</label>
+                                <input type="text" class="form-control"  name='description' ng-model='testimonial.description' required="" placeholder="description">
+                            </div>                  
+                           
+                            
+                        
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                           <input type="submit" name="submit" value="Edit Testimonial" class='btn btn-primary'>                 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
